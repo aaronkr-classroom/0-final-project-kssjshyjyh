@@ -28,6 +28,10 @@ const mongoose = require("mongoose"),
         default: 0,
         min: [0, "Course cannot have a negative cost"],
       },
+      courseImg: {
+        type: String,
+        trim: true,
+      },
     },
     {
       timestamps: true,

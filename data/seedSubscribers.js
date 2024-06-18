@@ -8,9 +8,10 @@ const mongoose = require("mongoose"),
   Subscriber = require("../models/Subscriber");
 
 // 데이터베이스 연결 설정
-mongoose.connect("mongodb://127.0.0.1:27017/ut-nodejs", {
-  useNewUrlParser: true,
-});
+mongoose.connect(
+  "mongodb+srv://UT-Node-kssjshyjyh:WmiQZIUoz9PpIZQp@ut-node-kssjshyjyh.ryfofzj.mongodb.net/?retryWrites=true&w=majority&appName=UT-Node-kssjshyjyh",
+  { useNewUrlParser: true }
+);
 
 mongoose.connection;
 
@@ -25,7 +26,7 @@ var subscribers = [
   },
   {
     name: "Haha",
-    email: "hhh@running.com",
+    email: "hioioh@running.com",
     phoneNumber: "010-????-????",
     newsletter: true,
     profileImg:
@@ -57,7 +58,7 @@ var subscribers = [
   },
   {
     name: "Jeon So-min",
-    email: "jsm@running.com",
+    email: "js222@running.com",
     phoneNumber: "010-8282-8282",
     newsletter: true,
     profileImg:

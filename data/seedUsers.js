@@ -8,9 +8,10 @@ const mongoose = require("mongoose"),
   User = require("../models/User");
 
 // 데이터베이스 연결 설정
-mongoose.connect("mongodb://127.0.0.1:27017/ut-nodejs", {
-  useNewUrlParser: true,
-});
+mongoose.connect(
+  "mongodb+srv://UT-Node-kssjshyjyh:WmiQZIUoz9PpIZQp@ut-node-kssjshyjyh.ryfofzj.mongodb.net/?retryWrites=true&w=majority&appName=UT-Node-kssjshyjyh",
+  { useNewUrlParser: true }
+);
 
 mongoose.connection;
 
